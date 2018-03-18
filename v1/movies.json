@@ -1,6 +1,7 @@
 {
     "movies": [
         {
+            "id": 1,
             "title": "Amor a primeira vista",
             "year": "1994",
             "genres": [

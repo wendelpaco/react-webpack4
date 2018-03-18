@@ -1,14 +1,16 @@
 import React from "react";
 import RouterComponent from "../routes/Routes";
 import './App.css';
-import { Link } from 'react-router-dom';
+import '../components/servico/cinema/Cinema.component.css'
+import '../nav-bar/nav-bar.css';
 
-
-const App = () => {
-    return (
-        <div className="container">
-            <RouterComponent />
-        </div>
-    );
-};
-export default App;
+export default class App extends React.Component {
+    render() {
+        return (
+            <div className="container">
+                <RouterComponent />
+                {this.props.children}
+            </div>
+        );
+    }
+}

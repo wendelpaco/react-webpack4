@@ -1,17 +1,19 @@
 import React from 'react';
 import { Redirect, Route, Switch, HashRouter as Router, Link } from 'react-router-dom';
 import HomeComponent from '../components/home/Home.components';
-import CinemaComponent from '../components/servico/cinema/Cinema.component';
+import FilmeCartaz from '../components/servico/cinema/FilmeCartaz';
+import Cinema from '../components/servico/cinema/Cinema';
+import NavBarComponent from '../nav-bar/Nav-bar';
 
 const RouterComponent = () => {
     return (
         <Router>
-            <div className="link">
-                <Link to="/">Home </Link>
-                <Link to="/cinema/filmes">Cinema </Link>
+            <div>
+                <NavBarComponent />
                 <Switch>
                     <Route exact path="/" component={HomeComponent} />
-                    <Route path="/cinema/filmes" component={CinemaComponent} />
+                    <Route path="/cinema/filmes" component={Cinema} />
+                    <Route path="/cinema/filme/:id" component={FilmeCartaz} />
                     <Route render={() =>
                         <div>
                             {console.log("404 NOT FOUND!")}
