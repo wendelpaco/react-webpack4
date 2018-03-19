@@ -1,5 +1,5 @@
 import React from 'react';
-import { getFilmes, getFilmesById } from '../../../api/GetFilme';
+import { getFilmesById } from '../../../api/GetFilme';
 
 export default class FilmeCartaz extends React.Component {
     constructor(props) {

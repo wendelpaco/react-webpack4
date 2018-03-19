@@ -2,6 +2,9 @@ import React from 'react';
 import { getFilmes } from '../../../api/GetFilme';
 import { Link } from 'react-router-dom';
 
+// const getFilmes = import('../../../api/GetFilme')
+// const Link = import('react-router-dom');
+
 export default class Cinema extends React.Component {
     constructor() {
         super();

@@ -5,6 +5,13 @@ import { Icon } from 'antd';
 import ReactHintFactory from 'react-hint'
 import 'react-hint/css/index.css'
 
+
+// const logo = import('../images/react.svg');
+// const Link = import('react-router-dom');
+// const Icon = import('antd');
+// const ReactHintFactory = import('react-hint')
+// const _ = import('react-hint/css/index.css')
+
 const ReactHint = ReactHintFactory(React)
 const styles = {
     fontSize: '20px'

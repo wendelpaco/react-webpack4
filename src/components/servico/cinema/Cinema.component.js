@@ -1,7 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Cinema.component.css';
-import { getFilmes } from '../../../api/GetFilme';
+// import { getFilmes } from '../../../api/GetFilme';
+
+
+// const Link = import('react-router-dom')
+// const _ = import('./Cinema.component.css');
+const getFilmes = import('../../../api/GetFilme');
+
+
+
 
 export default class CinemaComponent extends React.Component {
     constructor(props) {
