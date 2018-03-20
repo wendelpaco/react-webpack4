@@ -1,5 +1,5 @@
 import React from 'react';
-import { TradutorAPI } from './Traslate-API'
+import { TradutorAPI } from '../../api/Traslate-API';
 
 export default class Tradutor extends React.Component {
     constructor() {
