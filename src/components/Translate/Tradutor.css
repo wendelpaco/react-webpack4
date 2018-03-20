@@ -1,0 +1,55 @@
+.home-traducao {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.show-traducao {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.single-traducao {
+    padding: 20px;
+    margin: 20px 0;
+    box-sizing: border-box;
+    background: #62cbfd;
+    border-radius: .3rem;
+    box-shadow: 0 1px 5px -1px;
+}
+
+.single-traducao h1, h2, h3, h4, h5 {
+    overflow: hidden;
+    text-align: center;
+    margin: 0 auto;
+    color: #787c7e;
+}
+
+.single-traducao p {
+    overflow: hidden;
+    text-align: center;
+    /* font-size: 30px; */
+    margin: 0 auto;
+    /* font-weight: 600; */
+    color: #787c7e;
+}
+
+.form-control-traducao {
+    width: 80%;
+    padding: .375rem 1rem;
+    font-size: .875rem;
+    line-height: 1.5;
+    color: #787c7e;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+    text-align: center;
+}
+
+.language {
+    border-radius: 4px;
+    padding: 7px 0;
+    border: 1px solid transparent;
+    text-align: center;
+    margin: 0px 10px auto;
+}

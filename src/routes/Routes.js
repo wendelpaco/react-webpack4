@@ -4,6 +4,7 @@ import HomeComponent from '../components/home/Home.components';
 import FilmeCartaz from '../components/servico/cinema/FilmeCartaz';
 import Cinema from '../components/servico/cinema/Cinema';
 import NavBarComponent from '../nav-bar/Nav-bar';
+import Tradutor from '../components/Translate/Tradutor';
 
 const RouterComponent = () => {
     return (
@@ -14,6 +15,7 @@ const RouterComponent = () => {
                     <Route exact path="/" component={HomeComponent} />
                     <Route path="/cinema/filmes" component={Cinema} />
                     <Route path="/cinema/filme/:id" component={FilmeCartaz} />
+                    <Route path="/tradutor" component={Tradutor} />
                     <Route render={() =>
                         <div>
                             {console.log("404 NOT FOUND!")}

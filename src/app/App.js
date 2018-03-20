@@ -5,6 +5,7 @@ import RouterComponent from "../routes/Routes";
 const _ = import('./App.css');
 const ___ = import('../components/servico/cinema/Cinema.component.css')
 const __ = import('../nav-bar/nav-bar.css');
+const ____ = import('../components/Translate/Tradutor.css')
 
 export default class App extends React.Component {
     render() {
