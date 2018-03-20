@@ -4,8 +4,8 @@ const HtmlWebPackPlugin = require("html-webpack-plugin");
 module.exports = {
     entry: {
         main: './src/index.js',
-        vendor: ['react', 'react-dom', 'react-router','react-router-dom'],
-      },
+        vendor: ['react', 'react-dom', 'react-router', 'react-router-dom'],
+    },
     plugins: [
         new HtmlWebPackPlugin({
             template: "src/index.html",
@@ -16,13 +16,15 @@ module.exports = {
     output: {
         filename: '[name].[hash].js',
         path: path.resolve(__dirname, 'dist')
-      },
+    },
     module: {
         rules: [
             {
                 test: /\.js$/,
                 exclude: /node_modules/,
-                use: "babel-loader"
+                use: {
+                    loader: "babel-loader"
+                }
             },
             {
                 test: /\.html$/,
@@ -46,5 +48,5 @@ module.exports = {
             }
         ]
     },
-    
+
 };
